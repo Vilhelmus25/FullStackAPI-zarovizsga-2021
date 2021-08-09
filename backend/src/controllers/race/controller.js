@@ -14,9 +14,9 @@ exports.create = (req, res, next) => {
     }
 
     return raceService.create(req.body)
-        .then(cp => {
+        .then(race => {
             res.status(201);
-            res.json(cp);
+            res.json(race);
         })
         .catch(err => next(new createError.InternalServerError(err.message)));
 };
