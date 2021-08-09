@@ -16,7 +16,7 @@ const ServiceSchema = mongoose.Schema({
     },
     city: {
         type: String,
-        default: 0
+        default: ''
     },
     country: {
         type: String,
